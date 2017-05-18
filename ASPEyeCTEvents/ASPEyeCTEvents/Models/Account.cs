@@ -47,6 +47,28 @@ namespace ASPEyeCTEvents.Models
 
         }
 
+        public Like (Bijdrage bijdrage)
+        {
+            return bijdrage;
+        }
+
+        public Reageer(Bijdrage bijdrage)
+        {
+            return bijdrage;
+        }
+
+        public Rapporteer(Bijdrage bijdrage)
+        {
+            return bijdrage;
+        }
+
+        public void maakBijdrage()
+        {
+
+        }
+
+        
+
         public override string ToString()
         {
             return Gebruikersnaam + " ";
