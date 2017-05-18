@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
@@ -150,10 +150,24 @@
     <Compile Include="App_DAL\IVerhuurContext.cs" />
     <Compile Include="App_DAL\ProductCategorieSQLContext.cs" />
     <Compile Include="App_DAL\ProductSQLContext.cs" />
+    <Compile Include="App_DAL\AccountSQLContext.cs" />
+    <Compile Include="App_DAL\Database.cs" />
+    <Compile Include="App_DAL\EventSQLContext.cs" />
+    <Compile Include="App_DAL\IAccountContext.cs" />
+    <Compile Include="App_DAL\IPlekContext.cs" />
+    <Compile Include="App_DAL\PlekSQLContext.cs" />
+    <Compile Include="App_DAL\IPersoonContext.cs" />
+    <Compile Include="App_DAL\IReserveringContext.cs" />
+    <Compile Include="App_DAL\PersoonSQLContext.cs" />
+    <Compile Include="App_DAL\ReserveringSQLContext.cs" />
+    <Compile Include="App_DAL\IEventContext.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\AccountRepository.cs" />
+    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\EventRepository.cs" />
+    <Compile Include="Controllers\HomeController.cs"/>
     <Compile Include="Controllers\ProductCategorieRepository.cs" />
     <Compile Include="Controllers\ProductRepository.cs" />
     <Compile Include="Global.asax.cs">
@@ -163,6 +177,17 @@
     <Compile Include="Models\ProductCategorie.cs" />
     <Compile Include="Models\ProductExemplaar.cs" />
     <Compile Include="Models\Verhuurd.cs" />
+    <Compile Include="Controllers\PlekRepository.cs" />
+    <Compile Include="Controllers\PersoonRepository.cs" />
+    <Compile Include="Controllers\ReserveringRepository.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Plek.cs" />
+    <Compile Include="Models\Persoon.cs" />
+    <Compile Include="Models\Reservering.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -205,6 +230,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Event\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
