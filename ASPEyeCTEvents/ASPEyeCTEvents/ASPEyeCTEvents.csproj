@@ -149,6 +149,8 @@
     <Compile Include="App_DAL\Database.cs" />
     <Compile Include="App_DAL\EventSQLContext.cs" />
     <Compile Include="App_DAL\IAccountContext.cs" />
+    <Compile Include="App_DAL\IPlekContext.cs" />
+    <Compile Include="App_DAL\PlekSQLContext.cs" />
     <Compile Include="App_DAL\IPersoonContext.cs" />
     <Compile Include="App_DAL\IReserveringContext.cs" />
     <Compile Include="App_DAL\PersoonSQLContext.cs" />
@@ -161,12 +163,14 @@
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\EventRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PlekRepository.cs" />
     <Compile Include="Controllers\PersoonRepository.cs" />
     <Compile Include="Controllers\ReserveringRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Plek.cs" />
     <Compile Include="Models\Persoon.cs" />
     <Compile Include="Models\Reservering.cs" />
     <Compile Include="Models\Event.cs" />
