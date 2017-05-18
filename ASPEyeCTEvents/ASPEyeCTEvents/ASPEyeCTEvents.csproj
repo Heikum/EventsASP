@@ -147,20 +147,33 @@
   <ItemGroup>
     <Compile Include="App_DAL\AccountSQLContext.cs" />
     <Compile Include="App_DAL\Database.cs" />
+    <Compile Include="App_DAL\EventSQLContext.cs" />
     <Compile Include="App_DAL\IAccountContext.cs" />
     <Compile Include="App_DAL\IPlekContext.cs" />
     <Compile Include="App_DAL\PlekSQLContext.cs" />
+    <Compile Include="App_DAL\IPersoonContext.cs" />
+    <Compile Include="App_DAL\IReserveringContext.cs" />
+    <Compile Include="App_DAL\PersoonSQLContext.cs" />
+    <Compile Include="App_DAL\ReserveringSQLContext.cs" />
+    <Compile Include="App_DAL\IEventContext.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountRepository.cs" />
+    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\EventRepository.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PlekRepository.cs" />
+    <Compile Include="Controllers\PersoonRepository.cs" />
+    <Compile Include="Controllers\ReserveringRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Plek.cs" />
+    <Compile Include="Models\Persoon.cs" />
+    <Compile Include="Models\Reservering.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -203,6 +216,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Event\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
