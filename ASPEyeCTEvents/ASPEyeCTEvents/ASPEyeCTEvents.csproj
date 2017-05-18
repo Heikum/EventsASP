@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
@@ -145,6 +145,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_DAL\IProductCategorieContext.cs" />
+    <Compile Include="App_DAL\IProductContext.cs" />
+    <Compile Include="App_DAL\IVerhuurContext.cs" />
+    <Compile Include="App_DAL\ProductCategorieSQLContext.cs" />
+    <Compile Include="App_DAL\ProductSQLContext.cs" />
     <Compile Include="App_DAL\AccountSQLContext.cs" />
     <Compile Include="App_DAL\Database.cs" />
     <Compile Include="App_DAL\EventSQLContext.cs" />
@@ -162,7 +167,16 @@
     <Compile Include="Controllers\AccountRepository.cs" />
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\EventRepository.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeController.cs"/>
+    <Compile Include="Controllers\ProductCategorieRepository.cs" />
+    <Compile Include="Controllers\ProductRepository.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCategorie.cs" />
+    <Compile Include="Models\ProductExemplaar.cs" />
+    <Compile Include="Models\Verhuurd.cs" />
     <Compile Include="Controllers\PlekRepository.cs" />
     <Compile Include="Controllers\PersoonRepository.cs" />
     <Compile Include="Controllers\ReserveringRepository.cs" />
