@@ -156,6 +156,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="App_DAL\LocatieSQLContext.cs" />
+    <Compile Include="App_DAL\ILocatieContext.cs" />
+    <Compile Include="Controllers\LocatieRepository.cs" />
+    <Compile Include="Models\Locatie.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
