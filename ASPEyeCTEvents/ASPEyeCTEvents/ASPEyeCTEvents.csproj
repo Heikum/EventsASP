@@ -145,17 +145,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_DAL\AccountSQLContext.cs" />
-    <Compile Include="App_DAL\BijdrageSQLContext.cs" />
-    <Compile Include="App_DAL\Database.cs" />
-    <Compile Include="App_DAL\IAccountContext.cs" />
-    <Compile Include="App_DAL\IBijdrageContext.cs" />
     <Compile Include="App_DAL\IProductCategorieContext.cs" />
     <Compile Include="App_DAL\IProductContext.cs" />
     <Compile Include="App_DAL\IVerhuurContext.cs" />
     <Compile Include="App_DAL\ProductCategorieSQLContext.cs" />
     <Compile Include="App_DAL\ProductSQLContext.cs" />
-
+    <Compile Include="App_DAL\AccountSQLContext.cs" />
     <Compile Include="App_DAL\Database.cs" />
     <Compile Include="App_DAL\EventSQLContext.cs" />
     <Compile Include="App_DAL\IAccountContext.cs" />
@@ -166,12 +161,10 @@
     <Compile Include="App_DAL\PersoonSQLContext.cs" />
     <Compile Include="App_DAL\ReserveringSQLContext.cs" />
     <Compile Include="App_DAL\IEventContext.cs" />
-
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountRepository.cs" />
-
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\EventRepository.cs" />
     <Compile Include="Controllers\HomeController.cs"/>
@@ -180,11 +173,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Account.cs" />
-    <Compile Include="Models\Bericht.cs" />
-    <Compile Include="Models\Bestand.cs" />
-    <Compile Include="Models\Bijdrage.cs" />
-    <Compile Include="Models\Categorie.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductCategorie.cs" />
     <Compile Include="Models\ProductExemplaar.cs" />
