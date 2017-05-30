@@ -15,7 +15,7 @@ namespace ASPEyeCTEvents.Models
         private double prijs;
         private bool betaald;
 
-        public Verhuurd(int id, int productExemplaarId, int groepsLidId, DateTime datumIn, DateTime datumUit,
+        private Verhuurd(int id, int productExemplaarId, int groepsLidId, DateTime datumIn, DateTime datumUit,
             double prijs, bool betaald)
         {
             this.Id = id;
