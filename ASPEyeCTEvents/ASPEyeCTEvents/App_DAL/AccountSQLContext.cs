@@ -9,9 +9,9 @@ namespace ASPEyeCTEvents.App_DAL
 {
     public class AccountSQLContext : IAccountContext
     {
-        public List<DELETEAccount> GetAllAccounts()
+        public List<Account> GetAllAccounts()
         {
-            List<DELETEAccount> accounts = new List<DELETEAccount>();
+            List<Account> accounts = new List<Account>();
             using (SqlConnection connection = Database.Connection)
             {
 
@@ -33,7 +33,7 @@ namespace ASPEyeCTEvents.App_DAL
         }
 
 
-        public DELETEAccount InsertAccount(DELETEAccount account)
+        public Account InsertAccount(Account account)
         {
             using (SqlConnection connection = Database.Connection)
             {
@@ -88,7 +88,7 @@ namespace ASPEyeCTEvents.App_DAL
             return false;
         }
 
-        public bool UpdateAccount(DELETEAccount account)
+        public bool UpdateAccount(Account account)
         {
             using (SqlConnection connection = Database.Connection)
             {
@@ -125,9 +125,9 @@ namespace ASPEyeCTEvents.App_DAL
             return false;
         }
 
-        private DELETEAccount CreateAccountFromReader(SqlDataReader reader)
+        private Account CreateAccountFromReader(SqlDataReader reader)
         {
-            return new DELETEAccount(
+            return new Account(
                  Convert.ToInt32(reader["ID"]),
                  Convert.ToString(reader["Gebruikersnaam"]),
                  Convert.ToString(reader["Email"]),
