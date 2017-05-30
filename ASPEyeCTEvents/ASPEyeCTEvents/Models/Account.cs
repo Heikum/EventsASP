@@ -48,7 +48,7 @@ namespace ASPEyeCTEvents.Models
         }
 
 
-        public Like (Bijdrage bijdrage)
+        public Like(Bijdrage bijdrage)
         {
             return bijdrage;
         }
@@ -68,7 +68,7 @@ namespace ASPEyeCTEvents.Models
 
         }
 
-       
+
         public override string ToString()
         {
             return Gebruikersnaam + " ";
