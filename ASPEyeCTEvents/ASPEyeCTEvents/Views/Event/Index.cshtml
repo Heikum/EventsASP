@@ -1,0 +1,59 @@
+﻿@using ASPEyeCTEvents.Controllers
+@using ASPEyeCTEvents.Models
+@model IEnumerable<ASPEyeCTEvents.Models.Event>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Locatie_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Naam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatumStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatumEinde)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxBezoekers)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Locatie_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Naam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatumStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatumEinde)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxBezoekers)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

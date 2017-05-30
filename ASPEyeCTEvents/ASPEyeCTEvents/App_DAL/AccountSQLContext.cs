@@ -14,7 +14,9 @@ namespace ASPEyeCTEvents.App_DAL
             List<Account> accounts = new List<Account>();
             using (SqlConnection connection = Database.Connection)
             {
+
                 string query = "SELECT * FROM Account ORDER BY ID";
+
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -35,7 +37,9 @@ namespace ASPEyeCTEvents.App_DAL
         {
             using (SqlConnection connection = Database.Connection)
             {
+
                 string query = "INSERT INTO Account (Gebruikersnaam, Email, Activatiehash, Wachtwoord, Voornaam, Achternaam, Telefoonnr, Geactiveerd)" +
+               
                         "VALUES (@gebruikersnaam, @email, @activatiehash, @wachtwoord, @voornaam, @achternaam, @telefoonnr, @geactiveerd)";
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -68,7 +72,9 @@ namespace ASPEyeCTEvents.App_DAL
         {
             using (SqlConnection connection = Database.Connection)
             {
+
                 string query = "DELETE FROM Account WHERE ID=@id";
+
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("id", id);
@@ -86,7 +92,9 @@ namespace ASPEyeCTEvents.App_DAL
         {
             using (SqlConnection connection = Database.Connection)
             {
+
                 string query = "UPDATE Account SET Gebruikersnaam = @gebruikersnaam, Email = @email, Activatiehash = @activatiehash, Wachtwoord = @wachtwoord, Voornaam = @voornaam, Achternaam = @achternaam, Telefoonnr = @telefoonnr, Geactiveerd = @geactiveerd WHERE Id = @id";
+
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
 
