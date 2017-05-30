@@ -11,12 +11,12 @@ namespace ASPEyeCTEvents.App_DAL
 {
     public interface IAccountContext
     {
-        List<Account> GetAllAccounts();
+        List<DELETEAccount> GetAllAccounts();
 
-        Account InsertAccount(Account account);
+        DELETEAccount InsertAccount(DELETEAccount account);
 
         bool DeleteAccount(int id);
 
-        bool UpdateAccount(Account account);
+        bool UpdateAccount(DELETEAccount account);
     }
 }

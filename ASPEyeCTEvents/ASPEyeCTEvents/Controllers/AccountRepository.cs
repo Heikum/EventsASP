@@ -16,17 +16,17 @@ namespace ASPEyeCTEvents.Controllers
             this.context = context;
         }
 
-        public List<Account> GetAllAccounts()
+        public List<DELETEAccount> GetAllAccounts()
         {
             return context.GetAllAccounts();
         }
 
-        public Account InsertAccount(Account account)
+        public DELETEAccount InsertAccount(DELETEAccount account)
         {
             return context.InsertAccount(account);
         }
 
-        public bool UpdateAccount(Account account)
+        public bool UpdateAccount(DELETEAccount account)
         {
             return context.UpdateAccount(account);
         }
