@@ -30,7 +30,7 @@ namespace ASPEyeCTEvents.Models
 
         }
 
-        public maakHoofdBoeker(Groepslid groepslid)
+        public Bijdrage maakHoofdBoeker(Groepslid groepslid)
         {
             return groepslid;
         }

@@ -47,17 +47,17 @@ namespace ASPEyeCTEvents.Models
 
         }
 
-        public Like (Bijdrage bijdrage)
+        public Bijdrage Like (Bijdrage bijdrage)
         {
             return bijdrage;
         }
 
-        public Reageer(Bijdrage bijdrage)
+        public Bijdrage Reageer(Bijdrage bijdrage)
         {
             return bijdrage;
         }
 
-        public Rapporteer(Bijdrage bijdrage)
+        public Bijdrage Rapporteer(Bijdrage bijdrage)
         {
             return bijdrage;
         }
